@@ -32,11 +32,10 @@ else {
     sconto = 0;
 }
 
-costoDef = prezzoBigl - sconto;
+costoDef = "Ecco il costo del tuo biglietto: " + (prezzoBigl - sconto) + " €";
 
-console.log(costoDef);
+//console.log(costoDef);
 
+document.getElementById("output").innerHTML = costoDef;
 
-
-//console.log(prezzoBigl);
 
