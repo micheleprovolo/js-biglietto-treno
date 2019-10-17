@@ -32,10 +32,12 @@ else {
     sconto = 0;
 }
 
+//creo stringa del costo definitivo del biglietto dopo applicazione di eventuali sconti
 costoDef = "Ecco il costo del tuo biglietto: " + (prezzoBigl - sconto) + " €";
 
 //console.log(costoDef);
 
+//inserisco output in pagina
 document.getElementById("output").innerHTML = costoDef;
 
 
