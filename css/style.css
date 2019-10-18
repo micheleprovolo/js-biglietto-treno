@@ -1,5 +1,17 @@
-#output {
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#corpo {
+    max-width: 1900px;
+    background-color: azure;
+}
+
+#prezzo {
     color: cornsilk;
     background-color: cornflowerblue;
     text-align: center;
 }
+

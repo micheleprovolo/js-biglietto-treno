@@ -4,40 +4,35 @@
 //Il prezzo del biglietto è definito in base ai km (0.21 €cent al km) ma c’è uno sconto del 20% per i minorenni e del 40% per gli over 65
 
 // dichiarazione variabili
-var nKm,nAnni,prezzoBigl,costoAlKm,sconto,costoDef;
+var nKm, nAnni, prezzoBigl, sconto;
 
-//chiedo utente quanti km deve fare
-nKm = parseInt (prompt("Ciao! Quanti km devi fare?"));
+//chiedo utente quanti km deve fare (con parseInt forzo il valore da stringa a numero intero)
+nKm = prompt("Ciao! Quanti km devi fare?");
 
-//chiedo utente quanti anni ha
-nAnni = prompt("Quanti anni hai?");
+//chiedo utente quanti anni ha (con parseInt forzo il valore da stringa a numero intero)
+nAnni = parseInt(prompt("Quanti anni hai?"));
 
-//costo al km
-costoAlKm = 0.21 * 1;
+//calcolo prezzo biglietto in base ai km (0,21 euro/km) senza sconti
+prezzoBigl = nKm * 0.21;
 
-//calcolo prezzo biglietto in base ai km (0,21 euro/km)
-prezzoBigl = nKm * costoAlKm;
-
-
-//verifico se utente ha meno di 18 anni o più-uguale a di 65 anni per attribuire eventuale sconto sul totale
+//verifico se utente ha meno di 18 anni o più-uguale a 65 anni per calcolare prezzo scontato
 if (nAnni < 18) {
-   sconto = prezzoBigl / 100 * 20;
+   sconto = (prezzoBigl / 100) * 20;
+
+   prezzoBigl = prezzoBigl - sconto;
   }
 
 else if (nAnni >= 65) {
-    sconto = prezzoBigl / 100 * 40;
+    sconto = (prezzoBigl / 100) * 40;
+
+    prezzoBigl = prezzoBigl - sconto;
 }
 
-else {
-    sconto = 0;
-}
+//forzo il prezzo a 2 numeri dopo la virgola
+prezzoBigl = prezzoBigl.toFixed(2);
 
-//creo stringa del costo definitivo del biglietto dopo applicazione di eventuali sconti
-costoDef = "Ecco il costo del tuo biglietto: " + (prezzoBigl - sconto) + " €";
-
-//console.log(costoDef);
 
 //inserisco output in pagina
-document.getElementById("output").innerHTML = costoDef;
+document.getElementById("prezzo").innerHTML = prezzoBigl;
 
 
