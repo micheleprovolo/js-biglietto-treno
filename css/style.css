@@ -2,16 +2,54 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+main {
+    max-width: 1900px;
+    background-color: whitesmoke;
 }
 
 #corpo {
-    max-width: 1900px;
-    background-color: azure;
+    width: 90%;
+    margin: 0 auto;
+    background-color: rgb(87, 146, 223);
+    display: flex;
+}
+
+.column-left {
+    width: 30%;
+    margin: 0 auto;
+}
+
+#numero-biglietto {
+    color: white;
+}
+
+.qrcode {
+    max-width: 30%;
+}
+
+.middle-column {
+    width: 40%;
+    margin: 0 auto;
+    text-align: left;
+    color: white;
+}
+
+.column-right {
+    width: 30%;
+    margin: 0 auto;
+}
+
+.logosamp {
+    max-width: 30%;
+    padding-left: 30%;
 }
 
 #prezzo {
     color: cornsilk;
-    background-color: cornflowerblue;
+    background-color: rgb(115, 145, 197);
     text-align: center;
 }
 
