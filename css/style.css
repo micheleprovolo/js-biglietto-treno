@@ -7,23 +7,28 @@
 
 main {
     max-width: 1900px;
+    height: 400px;
     background-color: whitesmoke;
 }
 
 #corpo {
-    width: 90%;
+    width: 95%;
+    height: 70%;
     margin: 0 auto;
     background-color: rgb(87, 146, 223);
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .column-left {
-    width: 30%;
-    margin: 0 auto;
+    width: 25%;
+    padding-left: 3%;
 }
 
 #numero-biglietto {
     color: white;
+    font-weight: bold;
 }
 
 .qrcode {
@@ -31,24 +36,29 @@ main {
 }
 
 .middle-column {
-    width: 40%;
+    width: 50%;
     margin: 0 auto;
     text-align: left;
     color: white;
 }
 
+.titoli {
+    margin-bottom: 2%;
+}
+
 .column-right {
-    width: 30%;
+    width: 25%;
     margin: 0 auto;
 }
 
 .logosamp {
-    max-width: 30%;
-    padding-left: 30%;
+    width: 50%;
+    height: 50%;
+    padding-left: 20%;
 }
 
 #prezzo {
-    color: cornsilk;
+    color: white;
     background-color: rgb(115, 145, 197);
     text-align: center;
 }

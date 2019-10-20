@@ -46,8 +46,16 @@ month = data.getMonth() + 1;
 year = data.getFullYear();
 
 //inserisco tutto in html
-document.getElementById("data-completa").innerHTML = day + "/" + month + "/" + year;
+document.getElementById("data-completa").innerHTML = "Data: " + day + "/" + month + "/" + year;
 
 
 document.getElementById("numero-biglietto").innerHTML = "Numero biglietto: " + 
 Math.floor(Math.random() * 10000) + 1;
+
+
+if (prezzoBigl <= 20) {
+    document.getElementById("ticket-type").innerHTML = "Sfiga ticket";
+}
+else if (prezzoBigl >= 21) {
+    document.getElementById("ticket-type").innerHTML = "Normal ticket";
+}
