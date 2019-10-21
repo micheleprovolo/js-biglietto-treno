@@ -48,11 +48,11 @@ year = data.getFullYear();
 //inserisco tutto in html
 document.getElementById("data-completa").innerHTML = "Data: " + day + "/" + month + "/" + year;
 
-
+// genero e inserisco codice biglietto casuale
 document.getElementById("numero-biglietto").innerHTML = "Numero biglietto: " + 
 Math.floor(Math.random() * 10000) + 1;
 
-
+// verifico se il costo del biglietto rientra in determinati range e attribuisco in html delle etichette
 if (prezzoBigl <= 20) {
     document.getElementById("ticket-type").innerHTML = "Sfiga ticket";
 }

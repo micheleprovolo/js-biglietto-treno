@@ -46,6 +46,11 @@ main {
     margin-bottom: 2%;
 }
 
+#ticket-type {
+    margin-top: 2%;
+    text-align: center;
+}
+
 .column-right {
     width: 25%;
     margin: 0 auto;
